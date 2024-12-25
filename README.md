@@ -124,6 +124,8 @@ plt.show()
 - **Muestra la secuencia numérica** de las primeras 20 muestras de la señal.
 - **Genera y muestra la forma de onda** del audio.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QAR8exd7P6oxLK3MTD4JF1WjgP6-YN5h?usp=sharing)
+
 ---
 
 ## Resultados esperados.
