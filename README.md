@@ -138,7 +138,7 @@ plt.show()
 ![image](https://drive.google.com/uc?export=view&id=1WEY16S8WdK4BCxA7Hb029vuRsR2FzOSc)
 
 ### Recomendación:
-- Pueden moifcar el código para que al finalizar, genere un archivo `.ZIP` donde lleve incorporado el muestreo y la imagen del análisis (revisa el código del colab de mi repositorio sobre "Análisis de metadatos y Error de ELA en imágenes digitales", te puede ayudar mucho ).
+- Pueden modificar este código para que al finalizar el proceso, genere un archivo `.ZIP` donde lleve incorporado el muestreo y la imagen del análisis (revisa el código del colab de mi repositorio sobre "Análisis de metadatos y Error de ELA en imágenes digitales", te puede ayudar mucho ).
 
 ---
 # Cómo citar este trabajo.
