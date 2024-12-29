@@ -147,7 +147,7 @@ plt.show()
 Usa la siguiente entrada BibTeX si utilizas este trabajo en tu investigación:
 ```bash
 @article{joséRLeonett,
-  title={Análisis Error de ELA y Matadatos en imágenes digitales},
+  title={Almacenamiento digital de voz humana en forma de Onda},
   author={José R. Leonett},
   year={2024}
 }
