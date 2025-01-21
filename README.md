@@ -3,12 +3,12 @@
 ![GitHub](https://img.shields.io/badge/Python-3.8%2B-green)
 ![GitHub](https://img.shields.io/badge/Estado-Activo-brightgreen)
 ![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
 
 Desde la optica del **cómputo forense**, el análisis de señales de audio como la voz humana, es importante para la identificación de individuos, la verificación de autenticidad y la detección de manipulaciones en archivos de audio. En este apartado hablaré acerca de como se almacena digitalmente una onda de voz, utilizando las técnicas de procesamiento de señales y herramientas de programación en Python. Además, se proporciona un ejemplo práctico para grabar, analizar y visualizar la forma de onda de un archivo de audio, con un enfoque aplicado a la investigación forense.
 
-![image](https://drive.google.com/uc?export=view&id=1EKry_Wr-m-ebiTNXmwOgyeZg676okr_b)
+![image](https://github.com/jrleonett/almacenamiento-digital-onda-voz/blob/main/voz-audio.webp)
 
 ---
 
@@ -47,7 +47,8 @@ En el cómputo forense, el análisis de archivos de audio es importante porqué 
 - Muestra la secuencia numérica de las primeras 20 muestras de la señal.
 - Genera y visualiza la forma de onda del audio.
 
-## Cómo Usar el Proyecto.
+## Cómo Usar el Proyecto en Go
+ogle Colab.
 
 **En Google Colab:**
 - Haz clic en el siguiente botón para abrir el proyecto en Colab:
@@ -56,9 +57,10 @@ En el cómputo forense, el análisis de archivos de audio es importante porqué 
 
 **En Hugging Face Spaces:**
 - Accede a la aplicación en Hugging Face Spaces:
-[![Open In Colab]("https://huggingface.co/front/assets/huggingface_logo-noborder.svg"")(https://huggingface.co/spaces/leonett/analisis-audio-voz")
+[![Open in Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/leonett/analisis-audio-voz)
 - Sube un archivo de audio y observa los resultados del análisis en tiempo 
 
+---
 
 ## Explicación del código.
 
