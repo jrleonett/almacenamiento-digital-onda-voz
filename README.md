@@ -1,4 +1,10 @@
 # ¿Cómo se almacena digitalmente una onda de voz humana?
+![Licencia](https://img.shields.io/badge/Licencia-GNU%20GPL%20v3-blue)
+![GitHub](https://img.shields.io/badge/Python-3.8%2B-green)
+![GitHub](https://img.shields.io/badge/Estado-Activo-brightgreen)
+![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
 
 Desde la optica del **cómputo forense**, el análisis de señales de audio como la voz humana, es importante para la identificación de individuos, la verificación de autenticidad y la detección de manipulaciones en archivos de audio. En este apartado hablaré acerca de como se almacena digitalmente una onda de voz, utilizando las técnicas de procesamiento de señales y herramientas de programación en Python. Además, se proporciona un ejemplo práctico para grabar, analizar y visualizar la forma de onda de un archivo de audio, con un enfoque aplicado a la investigación forense.
 
@@ -27,90 +33,32 @@ En el cómputo forense, el análisis de archivos de audio es importante porqué 
 
 ---
 
-## Proyecto: Análisis de audio para cómputo forense.
+## Funcionalidades del Proyecto.
 
-### Descripción.
-Este proyecto consiste en la realización de un programa en Python que permite:
-1. Crear una carpeta para almacenar archivos de audio.
-2. Cargar un archivo de audio.
-3. Analizar la señal de audio en el dominio del tiempo.
-4. Visualizar la forma de onda y mostrar la secuencia numérica de la señal.
+**Carga de Archivos de Audio:**
+- Permite subir archivos de audio en formatos compatibles (`.wav`, `.mp3`, `etc.`).
+- Almacena los archivos en una carpeta llamada EVIDENCIA.
 
-### Requisitos.
-- Python 3.x
-- Librerías: `librosa`, `matplotlib`, `numpy`
+**Análisis de la Señal de Audio:**
+- Extrae la señal de audio y la tasa de muestreo.
+- Calcula la duración del audio.
 
-### Instalación y uso.
-1.- Clona este repositorio:
+**Visualización de Resultados:**
+- Muestra la secuencia numérica de las primeras 20 muestras de la señal.
+- Genera y visualiza la forma de onda del audio.
 
-```python
-git clone https://github.com/tu-usuario/analisis-audio-forense.git
-```
-2.- Instala las dependencias:
+## Cómo Usar el Proyecto.
 
-```python
-pip install librosa matplotlib numpy
-```
-3.- Ejecuta el código en tu entorno Python.
+**En Google Colab:**
+- Haz clic en el siguiente botón para abrir el proyecto en Colab:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QAR8exd7P6oxLK3MTD4JF1WjgP6-YN5h?usp=sharing)
+- Sigue las instrucciones en el notebook para subir un archivo de audio y ver los resultados.
 
----
+**En Hugging Face Spaces:**
+- Accede a la aplicación en Hugging Face Spaces:
+[![Open In Colab]("https://huggingface.co/front/assets/huggingface_logo-noborder.svg"")(https://huggingface.co/spaces/leonett/analisis-audio-voz")
+- Sube un archivo de audio y observa los resultados del análisis en tiempo 
 
-## Código del proyecto.
-
-### Parte 1: Crear la carpeta y cargar el archivo de audio.
-
-```python
-import os
-
-# Crear la carpeta EVIDENCIA si no existe
-carpeta_evidencia = "EVIDENCIA"
-if not os.path.exists(carpeta_evidencia):
-    os.makedirs(carpeta_evidencia)
-    print(f"Carpeta '{carpeta_evidencia}' creada.")
-else:
-    print(f"La carpeta '{carpeta_evidencia}' ya existe.")
-
-# Esperar a que se suba un archivo de audio
-print(f"\nPor favor, sube un archivo de audio (formato .wav, .mp3, etc.) a la carpeta '{carpeta_evidencia}'.")
-input("Presiona Enter cuando hayas subido el archivo...")
-
-# Buscar archivos de audio en la carpeta
-archivos_audio = [f for f in os.listdir(carpeta_evidencia) if f.endswith(('.wav', '.mp3', '.m4a', '.flac', '.ogg'))]
-
-if not archivos_audio:
-    print("No se encontraron archivos de audio en la carpeta.")
-else:
-    archivo_audio = os.path.join(carpeta_evidencia, archivos_audio[0])
-    print(f"\nArchivo de audio seleccionado: {archivo_audio}")
-```
-----
-### Parte 2: Análisis y visualización de la señal de audio.
-
-```python
-import librosa
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Cargar el archivo de audio
-y, sr = librosa.load(archivo_audio, sr=None)  # y: señal de audio, sr: tasa de muestreo
-
-# Calcular la duración del audio
-duracion = len(y) / sr
-print(f"Duración del audio: {duracion:.2f} segundos")
-
-# Mostrar la secuencia numérica de la señal de audio
-print("\nSecuencia numérica de la señal de audio (primeras 20 muestras):")
-np.set_printoptions(precision=6, suppress=True)  # Mostrar valores con 6 decimales
-print(y[:20])  # Muestra las primeras 20 muestras
-
-# Generar la forma de onda
-plt.figure(figsize=(10, 4))
-librosa.display.waveshow(y, sr=sr)
-plt.title(f'Forma de Onda del Audio: {archivos_audio[0]}')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud')
-plt.show()
-```
 
 ## Explicación del código.
 
@@ -123,8 +71,6 @@ plt.show()
 - **Calcula la duración del audio**.
 - **Muestra la secuencia numérica** de las primeras 20 muestras de la señal.
 - **Genera y muestra la forma de onda** del audio.
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QAR8exd7P6oxLK3MTD4JF1WjgP6-YN5h?usp=sharing)
 
 ---
 
@@ -154,6 +100,6 @@ Usa la siguiente entrada BibTeX si utilizas este trabajo en tu investigación:
 ```
 ---
 **Licencia.**
-- Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+- Este proyecto está bajo la licencia GNU General Public License v3.0. Consulta el archivo LICENSE para más detalles.
 
 
