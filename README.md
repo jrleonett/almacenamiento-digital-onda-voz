@@ -2,13 +2,13 @@
 ![Licencia](https://img.shields.io/badge/Licencia-GNU%20GPL%20v3-blue)
 ![GitHub](https://img.shields.io/badge/Python-3.8%2B-green)
 ![GitHub](https://img.shields.io/badge/Estado-Activo-brightgreen)
-![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)
 
 
 Desde la optica del **cómputo forense**, el análisis de señales de audio como la voz humana, es importante para la identificación de individuos, la verificación de autenticidad y la detección de manipulaciones en archivos de audio. En este apartado hablaré acerca de como se almacena digitalmente una onda de voz, utilizando las técnicas de procesamiento de señales y herramientas de programación en Python. Además, se proporciona un ejemplo práctico para grabar, analizar y visualizar la forma de onda de un archivo de audio, con un enfoque aplicado a la investigación forense.
 
 ![image](https://github.com/jrleonett/almacenamiento-digital-onda-voz/blob/main/voz-audio.webp)
+👉 Pruébalo aquí:: [![Open in Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/leonett/analisis-audio-voz)
 
 ---
 
@@ -47,48 +47,22 @@ En el cómputo forense, el análisis de archivos de audio es importante porqué 
 - Muestra la secuencia numérica de las primeras 20 muestras de la señal.
 - Genera y visualiza la forma de onda del audio.
 
-## Cómo Usar el Proyecto en Go
-ogle Colab.
-
-**En Google Colab:**
-- Haz clic en el siguiente botón para abrir el proyecto en Colab:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1QAR8exd7P6oxLK3MTD4JF1WjgP6-YN5h?usp=sharing)
-- Sigue las instrucciones en el notebook para subir un archivo de audio y ver los resultados.
-
-**En Hugging Face Spaces:**
+## Cómo Usar el Proyecto en Hugginface
 - Accede a la aplicación en Hugging Face Spaces:
 [![Open in Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/leonett/analisis-audio-voz)
 - Sube un archivo de audio y observa los resultados del análisis en tiempo 
 
 ---
 
-## Explicación del código.
+## Explicación de uso.
 
-### Parte 1:
-- **Crea una carpeta llamada EVIDENCIA** para almacenar archivos de audio.
 - **Espera a que el usuario suba un archivo de audio** y lo selecciona para su análisis.
-
-### Parte 2:
 - **Carga el archivo de audio** y extrae la señal de audio (`y`) y la tasa de muestreo (`sr`).
 - **Calcula la duración del audio**.
 - **Muestra la secuencia numérica** de las primeras 20 muestras de la señal.
 - **Genera y muestra la forma de onda** del audio.
 
----
-
-## Resultados esperados.
-
-### En la consola:
-- Duración del audio.
-- Secuencia numérica de las primeras 20 muestras.
-
-### Gráfica:
-- Forma de onda del archivo de audio.
-
 ![image](https://drive.google.com/uc?export=view&id=1WEY16S8WdK4BCxA7Hb029vuRsR2FzOSc)
-
-### Recomendación:
-- Pueden modificar este código para que al finalizar el proceso, genere un archivo `.ZIP` donde lleve incorporado el muestreo y la imagen del análisis (revisa el código del colab de mi repositorio sobre "Análisis de metadatos y Error de ELA en imágenes digitales", te puede ayudar mucho ).
 
 ---
 # Cómo citar este trabajo.
